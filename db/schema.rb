@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406222436) do
+ActiveRecord::Schema.define(:version => 20130406224040) do
 
   create_table "commute_attributes", :force => true do |t|
     t.integer  "cash"
@@ -23,6 +23,17 @@ ActiveRecord::Schema.define(:version => 20130406222436) do
     t.text     "commute_type"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "commutes", :force => true do |t|
+    t.string   "name"
+    t.datetime "start"
+    t.datetime "end"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.integer  "user_id"
+    t.integer  "commutetype_id"
+    t.integer  "distance"
   end
 
 # Could not dump table "commutes" because of following StandardError
