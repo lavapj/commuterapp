@@ -36,9 +36,6 @@ ActiveRecord::Schema.define(:version => 20130406224040) do
     t.integer  "distance"
   end
 
-# Could not dump table "commutes" because of following StandardError
-#   Unknown type 'reference' for column 'user_id'
-
   create_table "commutetypes", :force => true do |t|
     t.string   "name"
     t.string   "description"

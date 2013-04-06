@@ -83,4 +83,9 @@ class CommutesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def test
+
+  end
+  
 end
