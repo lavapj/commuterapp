@@ -11,7 +11,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130406222436) do
 
   create_table "commute_attibutes", :force => true do |t|
@@ -22,21 +21,6 @@ ActiveRecord::Schema.define(:version => 20130406222436) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
-
-  create_table "commute_attributes", :force => true do |t|
-    t.integer  "cash"
-    t.integer  "calories"
-    t.integer  "envfp"
-    t.text     "commute_type"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-=======
-ActiveRecord::Schema.define(:version => 20130406221603) do
->>>>>>> 0a82282efc51c8c3d9a9262077830b2131bb21d8
-
-# Could not dump table "commutes" because of following StandardError
-#   Unknown type 'reference' for column 'user_id'
 
   create_table "commutetypes", :force => true do |t|
     t.string   "name"
