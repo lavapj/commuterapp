@@ -1,8 +1,10 @@
 class CommutesController < ApplicationController
+  before_filter :authenticate_user!
+
   # GET /commutes
   # GET /commutes.json
   def index
-    @commutes = Commute.all
+    @commutes = User.find(current_user.id).commutes
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,6 +43,7 @@ class CommutesController < ApplicationController
   # POST /commutes.json
   def create
     @commute = Commute.new(params[:commute])
+    @commute.user_id = current_user.id
 
     respond_to do |format|
       if @commute.save

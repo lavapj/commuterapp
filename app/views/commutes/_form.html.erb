@@ -5,6 +5,12 @@
       <%= f.text_field :name, :class => 'text_field' %>
     </div>
   </div>
+    <div class="control-group">
+        <%= f.label :commutetype_id, :class => 'control-label' %>
+        <div class="controls">
+            <%= f.collection_select :commutetype_id, Commutetype.all, :id, :name, :class => 'collection_select' %>
+        </div>
+    </div>
   <div class="control-group">
     <%= f.label :start, :class => 'control-label' %>
     <div class="controls">
