@@ -11,7 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406203944) do
+ActiveRecord::Schema.define(:version => 20130406222436) do
+
+  create_table "commute_attibutes", :force => true do |t|
+    t.integer  "cash"
+    t.integer  "calories"
+    t.integer  "envfp"
+    t.text     "type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "commute_attributes", :force => true do |t|
+    t.integer  "cash"
+    t.integer  "calories"
+    t.integer  "envfp"
+    t.text     "commute_type"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "commutes", :force => true do |t|
     t.string   "name"
