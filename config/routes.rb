@@ -9,6 +9,9 @@ Commuterapp::Application.routes.draw do
 
   root :to => "dashboard#intro"
 
+  match '/dashboard' => "dashboard#main"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
