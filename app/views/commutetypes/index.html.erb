@@ -1,0 +1,25 @@
+<h1>Listing commutetypes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @commutetypes.each do |commutetype| %>
+  <tr>
+    <td><%= commutetype.name %></td>
+    <td><%= commutetype.description %></td>
+    <td><%= link_to 'Show', commutetype %></td>
+    <td><%= link_to 'Edit', edit_commutetype_path(commutetype) %></td>
+    <td><%= link_to 'Destroy', commutetype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Commutetype', new_commutetype_path %>

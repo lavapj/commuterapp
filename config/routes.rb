@@ -1,4 +1,10 @@
 Commuterapp::Application.routes.draw do
+  resources :commutetypes
+
+
+  resources :commutes
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

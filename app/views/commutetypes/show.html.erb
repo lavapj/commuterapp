@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @commutetype.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @commutetype.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_commutetype_path(@commutetype) %> |
+<%= link_to 'Back', commutetypes_path %>
