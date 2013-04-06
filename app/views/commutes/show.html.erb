@@ -1,20 +1,25 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Commute -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
 
-<p>
-  <b>Name:</b>
-  <%= @commute.name %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @commute.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:start) %>:</strong></dt>
+  <dd><%= @commute.start %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:end) %>:</strong></dt>
+  <dd><%= @commute.end %></dd>
+</dl>
 
-<p>
-  <b>Start:</b>
-  <%= @commute.start %>
-</p>
-
-<p>
-  <b>End:</b>
-  <%= @commute.end %>
-</p>
-
-
-<%= link_to 'Edit', edit_commute_path(@commute) %> |
-<%= link_to 'Back', commutes_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              commutes_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_commute_path(@commute), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              commute_path(@commute),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
