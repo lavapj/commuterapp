@@ -11,10 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406221603) do
+ActiveRecord::Schema.define(:version => 20130406224040) do
 
-# Could not dump table "commutes" because of following StandardError
-#   Unknown type 'reference' for column 'user_id'
+  create_table "commute_attributes", :force => true do |t|
+    t.integer  "cash"
+    t.boolean  "cash_fr"
+    t.integer  "calories"
+    t.boolean  "calories_fr"
+    t.integer  "envfp"
+    t.boolean  "envfp_fr"
+    t.text     "commute_type"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "commutes", :force => true do |t|
+    t.string   "name"
+    t.datetime "start"
+    t.datetime "end"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.integer  "user_id"
+    t.integer  "commutetype_id"
+    t.integer  "distance"
+  end
 
   create_table "commutetypes", :force => true do |t|
     t.string   "name"

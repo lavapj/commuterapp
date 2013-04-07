@@ -3,6 +3,7 @@ Commuterapp::Application.routes.draw do
 
   resources :commutetypes
 
+  match 'commutes/test' => 'commutes#test', :via => :get
 
   resources :commutes
 

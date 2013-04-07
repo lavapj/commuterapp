@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cash: 1
+  calories: 1
+  envfp: 1
+  type: MyText
+
+two:
+  cash: 1
+  calories: 1
+  envfp: 1
+  type: MyText
