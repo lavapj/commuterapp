@@ -1,4 +1,7 @@
 Commuterapp::Application.routes.draw do
+  resources :destinations
+
+
   devise_for :users
 
   resources :commutetypes
