@@ -7,7 +7,7 @@ class DashboardController < ApplicationController
       end
   end
 
-  def score
+  def main
     mileage = 12            # testing
     commute_type = 2   # testing
 
@@ -38,7 +38,7 @@ class DashboardController < ApplicationController
     if @commute.envfp_fr == true
       @envfp_score = @commute.envfp
     else
-      @envfp_score = (@baseline.envfp * mileage) *(1 + @passengers) - (@commute.envfp * mileage)
+      @envfp_score = (@baseline.envfp * mileage) * (1 + @passengers) - (@commute.envfp * mileage)
     end
 
   end
