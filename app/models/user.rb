@@ -10,4 +10,5 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   has_many :commutes, :dependent => :destroy
+  has_many :destinations, :dependent => :destroy
 end

@@ -2,7 +2,7 @@ class DestinationsController < ApplicationController
   # GET /destinations
   # GET /destinations.json
   def index
-    @destinations = Destination.all
+    @destinations = User.find(current_user.id).destinations
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,6 +41,7 @@ class DestinationsController < ApplicationController
   # POST /destinations.json
   def create
     @destination = Destination.new(params[:destination])
+    @destination.user_id = current_user.id
 
     respond_to do |format|
       if @destination.save
