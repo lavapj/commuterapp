@@ -6,9 +6,9 @@
     </div>
   </div>
     <div class="control-group">
-        <%= f.label :commutetype_id, :class => 'control-label' %>
+        <%= f.label :commutetype, :class => 'control-label' %>
         <div class="controls">
-            <%= f.collection_select :commutetype_id, Commutetype.all, :id, :name, :class => 'collection_select' %>
+            <%= f.collection_select :commutetype_ids, Commutetype.all, :id, :name, :class => 'collection_select' %>
         </div>
     </div>
   <div class="control-group">
@@ -27,6 +27,12 @@
       <%= f.label :distance, :class => 'control-label' %>
       <div class="controls">
           <%= f.number_field :distance, :class => 'number_field' %>
+      </div>
+  </div>
+  <div class="control-group">
+      <%= f.label :passenger, :class => 'control-label' %>
+      <div class="controls">
+          <%= f.number_field :passenger, :class => 'number_field' %>
       </div>
   </div>
 

@@ -8,6 +8,7 @@ class CreateCommuteAttributes < ActiveRecord::Migration
       t.integer :envfp
       t.boolean :envfp_fr
       t.text :commute_type
+      t.integer :passenger
 
       t.timestamps
     end

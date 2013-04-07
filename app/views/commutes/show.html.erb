@@ -6,12 +6,16 @@
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
   <dd><%= @commute.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:commutetype) %>:</strong></dt>
+  <dd><%= @commute.commutetypes.first!.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:start) %>:</strong></dt>
   <dd><%= @commute.start %></dd>
   <dt><strong><%= model_class.human_attribute_name(:end) %>:</strong></dt>
   <dd><%= @commute.end %></dd>
   <dt><strong><%= model_class.human_attribute_name(:distance) %>:</strong></dt>
   <dd><%= @commute.distance %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:passenger) %>:</strong></dt>
+  <dd><%= @commute.passenger %></dd>
 </dl>
 
 <div class="form-actions">
