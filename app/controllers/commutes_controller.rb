@@ -45,7 +45,8 @@ class CommutesController < ApplicationController
 
     respond_to do |format|
       if @commute.save
-        format.html { redirect_to @commute, notice: 'Commute was successfully created.' }
+#        format.html { redirect_to '/dashboard?id=' + @commute.id, notice: 'Commute was successfully created.' }
+        format.html { redirect_to '/dashboard?id=' + @commute.id.to_s, notice: 'Commute was successfully created.' }
         format.json { render json: @commute, status: :created, location: @commute }
       else
         format.html { render action: "new" }
