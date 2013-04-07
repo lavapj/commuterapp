@@ -1,10 +1,8 @@
 class CommutesController < ApplicationController
-  before_filter :authenticate_user!
-
   # GET /commutes
   # GET /commutes.json
   def index
-    @commutes = User.find(current_user.id).commutes
+    @commutes = Commute.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -43,7 +41,6 @@ class CommutesController < ApplicationController
   # POST /commutes.json
   def create
     @commute = Commute.new(params[:commute])
-    @commute.user_id = current_user.id
 
     respond_to do |format|
       if @commute.save
@@ -85,7 +82,31 @@ class CommutesController < ApplicationController
   end
 
   def test
+    mileage = 12
+    commute_type = "bike"
+    @result = CommuteAttribute.where("commute_type = ?", commute_type).first
+
+    # calculate cash score
+    if @result.cash_fr == true
+      @cash_score = @result.cash
+    else
+      @cash_score = @result.cash * mileage
+    end
+
+    # calculate calories score
+    if @result.calories_fr == true
+      @cal_score = @result.calories
+    else
+      @cal_score = @result.calories * mileage
+    end
+
+    # calculate envfp score
+    if @result.envfp_fr == true
+      @envfp_score = @result.envfp
+    else
+      @envfp_score = @result.envfp * mileage
+    end
 
   end
-  
+
 end
