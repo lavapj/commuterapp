@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Captions">
+	<rect x="-192" width="185" height="99"/>
+	<rect y="-36" width="100" height="30"/>
+	<text transform="matrix(1 0 0 1 66 -19.5)" fill="#000000" font-family="'Helvetica'" font-size="2.4">http://thenounproject.com</text>
+	<text transform="matrix(1 0 0 1 7.166 -24.5)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="6.1578">The Noun Project</tspan><tspan x="1.12" y="4.8" fill="#000000" font-family="'Helvetica-Bold'" font-size="4">Icon Template</tspan></text>
+	<text transform="matrix(1 0 0 1 -178.5 10.5)" fill="#000000" font-family="'Helvetica-Bold'" font-size="6.1578">Reminders</text>
+	<line fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" x1="8" y1="-14.5" x2="18" y2="-14.5"/>
+	<line fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" x1="-179" y1="16.5" x2="-162" y2="16.5"/>
+	<g>
+		<g>
+			<g>
+				<rect x="-170.802" y="31.318" fill="#000000" width="8.721" height="8.642"/>
+				<path fill="#000000" d="M-164.455,42.312h4.747v-4.703h-4.747V42.312z M-159.266,42.749h-5.63V37.17h5.63V42.749      L-159.266,42.749z M-166.221,44.062h8.279v-8.203h-8.279V44.062L-166.221,44.062z M-157.5,44.5h-9.163v-9.079h9.163V44.5      L-157.5,44.5z"/>
+				<polygon fill="#000000" points="-166.149,44.133 -166.292,43.991 -158.013,35.787 -157.871,35.929     "/>
+			</g>
+		</g>
+	</g>
+	<rect x="-179" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -179 60.1572)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Strokes</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Try to keep strokes at 4px</tspan><tspan x="0" y="10" fill="#000000" font-family="'Helvetica'" font-size="2.4">Minimum stroke weight is 2px</tspan><tspan x="0" y="14.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">For thicker strokes use even </tspan><tspan x="0" y="17.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">numbers: 6px, 8px etc.</tspan><tspan x="0" y="22" fill="#000000" font-family="'Helvetica-Bold'" font-size="2.4">Remember to expand strokes </tspan><tspan x="0" y="25" fill="#000000" font-family="'Helvetica-Bold'" font-size="2.4">before saving as an SVG </tspan></text>
+	<rect x="-136.5" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -136.5 60.1572)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Size</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Cannot be wider or taller than </tspan><tspan x="0" y="8.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">100px (artboard size)</tspan><tspan x="0" y="13.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Scale your icon to fill as much of </tspan><tspan x="0" y="16.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">the artboard as possible</tspan></text>
+	<rect x="-94" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -94 60.1572)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Ungroup</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">If your design has more than one </tspan><tspan x="0" y="8" fill="#000000" font-family="'Helvetica'" font-size="2.4">shape, make sure to ungroup</tspan></text>
+	<rect x="-50" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -50 60.1572)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Save as</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Save as .SVG and make sure </tspan><tspan x="0" y="8" fill="#000000" font-family="'Helvetica'" font-size="2.4">&#8220;Use Artboards&#8221; is checked</tspan></text>
+	<text transform="matrix(1.0074 0 0 1 -125.542 30.5933)" fill="#000000" font-family="'Helvetica'" font-size="2.5731">100px</text>
+	<text transform="matrix(1.0074 0 0 1 -41 39)" fill="#000000" font-family="'Helvetica-Bold'" font-size="5.1462">.SVG</text>
+	<rect x="-126.514" y="34.815" fill="#000000" width="10.261" height="10.185"/>
+	<rect x="-126.477" y="31.766" fill="#000000" width="0.522" height="2.337"/>
+	<rect x="-116.812" y="31.766" fill="#000000" width="0.523" height="2.337"/>
+	<rect x="-127" y="32.337" fill="#000000" width="11.233" height="0.572"/>
+	<g>
+		<rect x="-83.805" y="33.844" fill="#000000" width="10.305" height="10.156"/>
+		<rect x="-76.809" y="28.707" fill="#000000" width="3.308" height="3.261"/>
+	</g>
+	<rect x="-178.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+	<rect x="-136.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+	<rect x="-93.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+	<rect x="-49.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+</g>
+<g id="Your_Icon">
+	<g id="Ellipse_2_copy_3">
+		<g>
+			<ellipse fill-rule="evenodd" clip-rule="evenodd" fill="#000000" cx="69.826" cy="14.886" rx="7.872" ry="7.886"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_17">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M76.402,32.689l-10.086-8.845     c-1.351-1.185-3.404-1.05-4.589,0.3c-1.184,1.351-1.051,3.405,0.301,4.589l10.085,8.845c1.352,1.185,3.406,1.049,4.59-0.301     C77.888,35.928,77.753,33.874,76.402,32.689z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_17_copy_2">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M59.005,20.743l-13.443,1.039     c-1.8,0.139-3.149,1.711-3.013,3.512c0.136,1.8,1.705,3.147,3.504,3.009l13.443-1.039c1.8-0.14,3.149-1.711,3.013-3.512     C62.374,21.951,60.805,20.604,59.005,20.743z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_17_copy">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M86.92,23.155c-1.289-1.25-3.349-1.217-4.599,0.072     l-9.335,9.634c-1.25,1.29-1.217,3.348,0.072,4.598c1.29,1.25,3.349,1.217,4.599-0.072l9.335-9.634     C88.243,26.464,88.21,24.405,86.92,23.155z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_17_copy_3">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M46.879,22.952c-1.29-1.25-3.349-1.217-4.599,0.072     l-9.334,9.634c-1.25,1.29-1.218,3.348,0.072,4.598c1.29,1.25,3.349,1.217,4.599-0.072l9.335-9.634     C48.201,26.261,48.169,24.202,46.879,22.952z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_14_copy">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M64.786,22.648l-1.35-0.813     c-2.795-1.683-6.422-0.777-8.102,2.023L41.345,47.18c-1.68,2.8-0.775,6.434,2.02,8.116l1.349,0.812     c2.795,1.684,6.423,0.777,8.103-2.022l13.989-23.321C68.485,27.965,67.581,24.331,64.786,22.648z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_15">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M63.872,60.386L51.863,48.158     c-1.981-2.019-5.221-2.045-7.236-0.06c-2.014,1.985-2.041,5.232-0.059,7.25l12.008,12.228c1.981,2.019,5.221,2.044,7.235,0.059     S65.854,62.403,63.872,60.386z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_15_copy">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M49.804,43.457c-2.363-1.552-5.519-0.882-7.048,1.496     l-9.267,14.412c-1.529,2.38-0.854,5.566,1.51,7.119c2.363,1.552,5.519,0.882,7.048-1.497l9.267-14.412     C52.843,48.196,52.168,45.009,49.804,43.457z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_16">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M61.165,60.303c-2.448-0.467-4.77,1.38-5.186,4.122     L52.57,86.886c-0.417,2.744,1.229,5.346,3.677,5.812s4.77-1.379,5.186-4.122l3.41-22.461     C65.259,63.372,63.612,60.77,61.165,60.303z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_16_copy">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M37.328,60.386l-22.25-4.096     c-2.717-0.5-5.389,0.907-5.967,3.144c-0.578,2.237,1.156,4.455,3.874,4.956l22.25,4.096c2.717,0.5,5.39-0.907,5.968-3.144     C41.78,63.104,40.045,60.887,37.328,60.386z"/>
+		</g>
+	</g>
+</g>
+</svg>
