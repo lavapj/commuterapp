@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130407010616) do
+ActiveRecord::Schema.define(:version => 20130407013143) do
 
   create_table "commute_attributes", :force => true do |t|
     t.integer  "cash"
@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(:version => 20130407010616) do
     t.boolean  "calories_fr"
     t.integer  "envfp"
     t.boolean  "envfp_fr"
-    t.integer  "passenger"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.integer  "commutetype_id"
@@ -34,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20130407010616) do
     t.datetime "updated_at", :null => false
     t.integer  "user_id"
     t.integer  "distance"
+    t.integer  "passenger"
   end
 
   create_table "commutes_commutetypes", :id => false, :force => true do |t|

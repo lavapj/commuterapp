@@ -10,6 +10,7 @@
       <th><%= model_class.human_attribute_name(:start) %></th>
       <th><%= model_class.human_attribute_name(:end) %></th>
       <th><%= model_class.human_attribute_name(:distance) %></th>
+      <th><%= model_class.human_attribute_name(:passenger) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -21,6 +22,7 @@
         <td><%= commute.start %></td>
         <td><%= commute.end %></td>
         <td><%= commute.distance %></td>
+        <td><%= commute.passenger %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_commute_path(commute), :class => 'btn btn-mini' %>
