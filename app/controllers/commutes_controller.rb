@@ -80,39 +80,4 @@ class CommutesController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-  def test
-    mileage = 12
-    commute_type = "bike"
-
-    @baseline = CommuteAttribute.where("commute_type = ?", "car").first
-    @result = CommuteAttribute.where("commute_type = ?", commute_type).first
-
-    # person + passengers
-    # 2 * 10 miles
-
-    # calculate cash score
-    #   car cash value - other cash value
-    if @result.cash_fr == true
-      @cash_score = @baseline.cash - @result.cash
-    else
-      @cash_score = (@baseline.cash * mileage) - (@result.cash * mileage)
-    end
-
-    # calculate calories score
-    if @result.calories_fr == true
-      @cal_score = @result.calories
-    else
-      @cal_score = @result.calories * mileage
-    end
-
-    # calculate envfp score
-    if @result.envfp_fr == true
-      @envfp_score = @result.envfp
-    else
-      @envfp_score = @result.envfp * mileage
-    end
-
-  end
-
 end
