@@ -8,11 +8,15 @@ class DashboardController < ApplicationController
   end
 
   def main
-    mileage = 12            # testing
-    commute_type = 2   # testing
+    @commute = Commute.new
 
-    @baseline = CommuteAttribute.where("commutetype_id = ?", 2).first
-    @commute = CommuteAttribute.where("commutetype_id = ?", commute_type).first
+    # mileage = 12            # testing
+    # commute_type = 2   # testing
+
+    @baseline = Commutetype.find(2).commute_attribute
+
+    # @baseline = CommuteAttribute.where("commutetype_id = ?", 2).first
+    # @mycommute = CommuteAttribute.where("commutetype_id = ?", commute_type).first
     @passengers = 2
 
     # person + passengers
@@ -21,25 +25,25 @@ class DashboardController < ApplicationController
 
     # calculate cash score
     #   car cash value - other cash value
-    if @commute.cash_fr == true
-      @cash_score = @baseline.cash - @commute.cash
-    else
-      @cash_score = (@baseline.cash * mileage) * (1 + @passengers) - (@commute.cash * mileage)
-    end
+    # if @commute.cash_fr == true
+    #   @cash_score = @baseline.cash - @commute.cash
+    # else
+    #   @cash_score = (@baseline.cash * mileage) * (1 + @passengers) - (@commute.cash * mileage)
+    # end
 
-    # calculate calories score
-    if @commute.calories_fr == true
-      @cal_score = @commute.calories
-    else
-      @cal_score = @commute.calories * mileage
-    end
+    # # calculate calories score
+    # if @commute.calories_fr == true
+    #   @cal_score = @commute.calories
+    # else
+    #   @cal_score = @commute.calories * mileage
+    # end
 
-    # calculate envfp score
-    if @commute.envfp_fr == true
-      @envfp_score = @commute.envfp
-    else
-      @envfp_score = (@baseline.envfp * mileage) * (1 + @passengers) - (@commute.envfp * mileage)
-    end
+    # # calculate envfp score
+    # if @commute.envfp_fr == true
+    #   @envfp_score = @commute.envfp
+    # else
+    #   @envfp_score = (@baseline.envfp * mileage) * (1 + @passengers) - (@commute.envfp * mileage)
+    # end
 
   end
 

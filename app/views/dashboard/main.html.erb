@@ -1,37 +1,20 @@
-
+<%- model_class = Commute -%>
 <div class="container">
 	<div class="row">
     <h4 style="color:#BDC3C7; text-align:right;">April 6, 2013</h4>
 	</div><!-- end row -->
   <div class="row" style=" margin-bottom:20px;">
+    <%= form_for @commute, :html => { :class => 'form-horizontal' } do |f| %>
+
     <h1 class="text-center" style="margin: 25px 0;">Today I am 
-    <select value="transport" tabindex="1" name="transport" style="display:inline; width:200px;">
-      <option value="driving" selected="selected">(method of transport)</option>
-      <option value="0">Choose transport</option>
-      <option value="1">Spider Man</option>
-      <option value="2">Wolverine</option>
-      <option value="3">Captain America</option>
-      <option value="Crocodile">Crocodile</option>
-    </select>
-    to
-    <select value="destination" tabindex="1" name="destination" style="display:inline; width:150px;">
-      <option value="work" selected="selected">(destination)</option>
-      <option value="0">Choose hero</option>
-      <option value="1">Spider Man</option>
-      <option value="2">Wolverine</option>
-      <option value="3">Captain America</option>
-      <option value="Crocodile">Crocodile</option>
-    </select>
-    with 
-    <select value="passengers" tabindex="1" name="passengers" style="display:inline; width:150px;">
-      <option value="0" selected="selected">(number of people)</option>
-      <option value="1">0 people</option>
-      <option value="2">1 person</option>
-      <option value="3">2 people</option>
-      <option value="4">3 people</option>
-      <option value="5">4 people</option>
-    </select>
+      <%= f.collection_select :commutetype_ids, Commutetype.all, :id, :name, :class => 'collection_select' %>    to
+      <%= f.collection_select :distance, Destination.all, :distance, :name, :class => 'collection_select' %>    with 
+      <%= f.select( "passenger", { "0 people" => "0", "1 person" => "1", "2 people" => "2", "3 people" => "3"}) %>
     </h1>
+      <div class="form-actions">
+        <%= f.submit nil, :class => 'btn btn-primary' %>
+      </div>
+    <% end %>
   </div><!-- end row -->
   <div class="row">
       <div class="span2" style="padding-left:25px;">
