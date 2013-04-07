@@ -62,7 +62,8 @@ class CommutesController < ApplicationController
 
     respond_to do |format|
       if @commute.update_attributes(params[:commute])
-        format.html { redirect_to @commute, notice: 'Commute was successfully updated.' }
+#        format.html { redirect_to @commute, notice: 'Commute was successfully updated.' }
+        format.html { redirect_to '/dashboard?id=' + @commute.id.to_s, notice: 'Commute was successfully created.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
