@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:commutetype) %></th>
       <th><%= model_class.human_attribute_name(:start) %></th>
       <th><%= model_class.human_attribute_name(:end) %></th>
       <th><%= model_class.human_attribute_name(:distance) %></th>
@@ -16,6 +17,7 @@
     <% @commutes.each do |commute| %>
       <tr>
         <td><%= link_to commute.name, commute_path(commute) %></td>
+        <td><%= commute.commutetypes.first!.name %></td>
         <td><%= commute.start %></td>
         <td><%= commute.end %></td>
         <td><%= commute.distance %></td>
