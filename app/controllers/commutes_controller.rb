@@ -84,13 +84,19 @@ class CommutesController < ApplicationController
   def test
     mileage = 12
     commute_type = "bike"
+
+    @baseline = CommuteAttribute.where("commute_type = ?", "car").first
     @result = CommuteAttribute.where("commute_type = ?", commute_type).first
 
+    # person + passengers
+    # 2 * 10 miles
+
     # calculate cash score
+    #   car cash value - other cash value
     if @result.cash_fr == true
-      @cash_score = @result.cash
+      @cash_score = @baseline.cash - @result.cash
     else
-      @cash_score = @result.cash * mileage
+      @cash_score = (@baseline.cash * mileage) - (@result.cash * mileage)
     end
 
     # calculate calories score

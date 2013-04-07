@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20130406224040) do
     t.integer  "envfp"
     t.boolean  "envfp_fr"
     t.text     "commute_type"
+    t.integer  "passenger"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
