@@ -1,18 +1,17 @@
 Commuterapp::Application.routes.draw do
-  resources :destinations
-
 
   devise_for :users
 
-  resources :commutetypes
-
+  resources :destinations
+  resources :commute_types
   resources :commutes
 
 
   root :to => 'dashboard#intro'
 
   match '/dashboard' => 'dashboard#main'
-  match '/dashboard/score' => 'dashboard#score', :via => :get
+
+  get 'dashboard/:id', :to => 'dashboard#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

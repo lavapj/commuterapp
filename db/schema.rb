@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130407030825) do
+ActiveRecord::Schema.define(:version => 20130408001058) do
 
   create_table "commute_attributes", :force => true do |t|
     t.integer  "cash"
@@ -20,32 +20,29 @@ ActiveRecord::Schema.define(:version => 20130407030825) do
     t.boolean  "calories_fr"
     t.integer  "envfp"
     t.boolean  "envfp_fr"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-    t.integer  "commutetype_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "commute_type_id"
+  end
+
+  create_table "commute_types", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.boolean  "is_baseline"
   end
 
   create_table "commutes", :force => true do |t|
     t.string   "name"
     t.datetime "start"
     t.datetime "end"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
     t.integer  "user_id"
     t.integer  "distance"
     t.integer  "passenger"
-  end
-
-  create_table "commutes_commutetypes", :id => false, :force => true do |t|
-    t.integer "commute_id"
-    t.integer "commutetype_id"
-  end
-
-  create_table "commutetypes", :force => true do |t|
-    t.string   "name"
-    t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.integer  "commute_type_id"
   end
 
   create_table "destinations", :force => true do |t|

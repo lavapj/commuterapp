@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="span2" style="padding-left:25px;">
+        <%= image_tag "icons/icon-env.svg" %>
+    </div>
+    <div class="span6" style="margin-top:30px;">
+        <h4>You will save $<%= @commute.cash_score %>.</h4>
+    </div>
+    <div class="span4" style="margin-top:30px;">
+        <div class="progress">
+            <div class="bar" style="width: 40%;"></div>
+            <div class="bar bar-warning" style="width: 10%;"></div>
+            <div class="bar bar-danger" style="width: 10%;"></div>
+            <div class="bar bar-success" style="width: 10%;"></div>
+            <div class="bar bar-info" style="width: 10%;"></div>
+        </div>
+    </div>
+</div><!-- end row -->
+<div class="row">
+    <div class="span2" style="padding-left:25px;">
+        <%= image_tag "icons/icon-health.svg" %>
+    </div>
+    <div class="span6" style="margin-top:30px;">
+        <h4>You will burn <%= @commute.cal_score %> calories.</h4>
+    </div>
+    <div class="span4" style="margin-top:30px;">
+        <div class="progress">
+            <div class="bar" style="width: 40%;"></div>
+            <div class="bar bar-warning" style="width: 10%;"></div>
+            <div class="bar bar-danger" style="width: 10%;"></div>
+            <div class="bar bar-success" style="width: 10%;"></div>
+            <div class="bar bar-info" style="width: 10%;"></div>
+        </div>
+    </div>
+</div><!-- end row -->
+<div class="row">
+    <div class="span2" style="padding-left:25px;">
+        <%= image_tag "icons/icon-money.svg" %>
+    </div>
+    <div class="span6" style="margin-top:30px;">
+        <h4>You will reduce your carbon footprint by <%= @commute.envfp_score %> grams.</h4>
+    </div>
+    <div class="span4" style="margin-top:30px;">
+        <div class="progress">
+            <div class="bar" style="width: 40%;"></div>
+            <div class="bar bar-warning" style="width: 10%;"></div>
+            <div class="bar bar-danger" style="width: 10%;"></div>
+            <div class="bar bar-success" style="width: 10%;"></div>
+            <div class="bar bar-info" style="width: 10%;"></div>
+        </div>
+    </div>
+</div><!-- end row -->
+<div class="row" style="background:#1ABC9C; height:150px; margin-top:25px; margin-bottom:25px; margin-right:0; width: 100%;">
+</div><!-- end row -->

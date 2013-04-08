@@ -45,8 +45,7 @@ class CommutesController < ApplicationController
 
     respond_to do |format|
       if @commute.save
-#        format.html { redirect_to '/dashboard?id=' + @commute.id, notice: 'Commute was successfully created.' }
-        format.html { redirect_to '/dashboard?id=' + @commute.id.to_s, notice: 'Commute was successfully created.' }
+        redirect_to dashboard_path(@commute), notice: 'Commute was successfully created.'
         format.json { render json: @commute, status: :created, location: @commute }
       else
         format.html { render action: "new" }
@@ -62,8 +61,7 @@ class CommutesController < ApplicationController
 
     respond_to do |format|
       if @commute.update_attributes(params[:commute])
-#        format.html { redirect_to @commute, notice: 'Commute was successfully updated.' }
-        format.html { redirect_to '/dashboard?id=' + @commute.id.to_s, notice: 'Commute was successfully created.' }
+        redirect_to dashboard_path(@commute), notice: 'Commute was successfully update.'
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
