@@ -2,7 +2,7 @@ class CommutesController < ApplicationController
   # GET /commutes
   # GET /commutes.json
   def index
-    @commutes = User.find(current_user.id).commutes
+    @commutes = current_user.commutes
 
     respond_to do |format|
       format.html # index.html.erb
@@ -40,8 +40,7 @@ class CommutesController < ApplicationController
   # POST /commutes
   # POST /commutes.json
   def create
-    @commute = Commute.new(params[:commute])
-    @commute.user_id = current_user.id
+    @commute = Commute.new(params[:commute].merge!({:user_id => current_user.id}))
 
     respond_to do |format|
       if @commute.save
