@@ -18,7 +18,7 @@
     <% @commutes.each do |commute| %>
       <tr>
         <td><%= link_to commute.name, commute_path(commute) %></td>
-        <td><%= commute.commute_type.name %></td>
+        <td><%= commute.commute_type %></td>
         <td><%= commute.start %></td>
         <td><%= commute.end %></td>
         <td><%= commute.distance %></td>
