@@ -1,9 +1,10 @@
+<div class="score" <% unless @commute.id? %>style="display: none"<% end %> >
 <div class="row">
     <div class="span2" style="padding-left:25px;">
         <%= image_tag "icons/icon-env.svg" %>
     </div>
     <div class="span6" style="margin-top:30px;">
-        <h4>You will save $<%= @commute.cash_score %>.</h4>
+        <h4>You will save $<span id='cash_score'><%= @commute.cash_score || 0 %></span>.</h4>
     </div>
     <div class="span4" style="margin-top:30px;">
         <div class="progress">
@@ -20,7 +21,7 @@
         <%= image_tag "icons/icon-health.svg" %>
     </div>
     <div class="span6" style="margin-top:30px;">
-        <h4>You will burn <%= @commute.cal_score %> calories.</h4>
+        <h4>You will burn <span id='cal_score'><%= @commute.cal_score || 0 %></span> calories.</h4>
     </div>
     <div class="span4" style="margin-top:30px;">
         <div class="progress">
@@ -37,7 +38,7 @@
         <%= image_tag "icons/icon-money.svg" %>
     </div>
     <div class="span6" style="margin-top:30px;">
-        <h4>You will reduce your carbon footprint by <%= @commute.envfp_score %> grams.</h4>
+        <h4>You will reduce your carbon footprint by <span id='envfp_score'><%= @commute.envfp_score || 0%></span> grams.</h4>
     </div>
     <div class="span4" style="margin-top:30px;">
         <div class="progress">
@@ -51,3 +52,4 @@
 </div><!-- end row -->
 <div class="row" style="background:#1ABC9C; height:150px; margin-top:25px; margin-bottom:25px; margin-right:0; width: 100%;">
 </div><!-- end row -->
+</div>

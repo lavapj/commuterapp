@@ -11,28 +11,34 @@ class Commute < ActiveRecord::Base
   def cash_score
     # calculate cash score
     #   car cash value - other cash value
-    if cash_fr
-      (CommuteType.baseline.cash - cash)
-    else
-      (CommuteType.baseline.cash * distance) * (1 + passenger) - (cash * distance)
+    if id?
+      if cash_fr
+        (CommuteType.baseline.cash - cash)
+      else
+        (CommuteType.baseline.cash * distance) * (1 + passenger) - (cash * distance)
+      end
     end
  end
 
   def cal_score
     # calculate calories score
-    if calories_fr
-      calories
-    else
-      calories * distance
+    if id?
+      if calories_fr
+        calories
+      else
+        calories * distance
+      end
     end
   end
 
   def envfp_score
     # calculate envfp score
-    if envfp_fr
-      (CommuteType.baseline.envfp - envfp)
-    else
-      (CommuteType.baseline.envfp * distance) * (1 + passenger) - (envfp * distance)
+    if id?
+      if envfp_fr
+        (CommuteType.baseline.envfp - envfp)
+      else
+        (CommuteType.baseline.envfp * distance) * (1 + passenger) - (envfp * distance)
+      end
     end
   end
 end

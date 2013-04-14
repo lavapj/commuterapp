@@ -9,9 +9,9 @@ Commuterapp::Application.routes.draw do
 
   root :to => 'dashboard#intro'
 
-  match '/dashboard' => 'dashboard#main'
+  match 'dashboard' => 'dashboard#main'
 
-  get 'dashboard/:id', :to => 'dashboard#show'
+  match 'dashboard/:id', :to => 'dashboard#show', :as => 'dashboard'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

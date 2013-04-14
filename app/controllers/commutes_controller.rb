@@ -44,8 +44,11 @@ class CommutesController < ApplicationController
 
     respond_to do |format|
       if @commute.save
-        redirect_to dashboard_path(@commute), notice: 'Commute was successfully created.'
-        format.json { render json: @commute, status: :created, location: @commute }
+        format.html { render action: "show" }
+        format.json { render json: @commute.attributes.merge({:cal_score => @commute.cal_score,
+                                                              :cash_score => @commute.cash_score,
+                                                              :envfp_score => @commute.envfp_score
+                                                             }), status: :ok, location: @commute }
       else
         format.html { render action: "new" }
         format.json { render json: @commute.errors, status: :unprocessable_entity }
@@ -60,8 +63,11 @@ class CommutesController < ApplicationController
 
     respond_to do |format|
       if @commute.update_attributes(params[:commute])
-        redirect_to dashboard_path(@commute), notice: 'Commute was successfully update.'
-        format.json { head :no_content }
+        format.html { render action: "show" }
+        format.json { render json: @commute.attributes.merge({:cal_score => @commute.cal_score,
+                                                              :cash_score => @commute.cash_score,
+                                                              :envfp_score => @commute.envfp_score
+                                                             }), status: :ok, location: @commute }
       else
         format.html { render action: "edit" }
         format.json { render json: @commute.errors, status: :unprocessable_entity }

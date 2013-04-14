@@ -13,6 +13,10 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/out
+
+# Ignoring OSX files
+.DS_Store
 
 # Ignore all Intellij Files
 /*.iml
