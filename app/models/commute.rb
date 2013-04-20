@@ -1,6 +1,5 @@
 class Commute < ActiveRecord::Base
   attr_accessible :name, :commute_type_id, :start, :end, :distance, :passenger, :user_id
-  attr_reader :cash_score, :cal_score, :envfp_score
 
   belongs_to :user#, :autosave => true
   belongs_to :commute_type#, :autosave => true
@@ -11,7 +10,7 @@ class Commute < ActiveRecord::Base
   def cash_score
     # calculate cash score
     #   car cash value - other cash value
-    if id?
+    if !new_record?
       if cash_fr
         (CommuteType.baseline.cash - cash)
       else
@@ -22,7 +21,7 @@ class Commute < ActiveRecord::Base
 
   def cal_score
     # calculate calories score
-    if id?
+    if !new_record?
       if calories_fr
         calories
       else
@@ -33,7 +32,7 @@ class Commute < ActiveRecord::Base
 
   def envfp_score
     # calculate envfp score
-    if id?
+    if !new_record?
       if envfp_fr
         (CommuteType.baseline.envfp - envfp)
       else

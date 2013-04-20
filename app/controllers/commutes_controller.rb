@@ -45,10 +45,7 @@ class CommutesController < ApplicationController
     respond_to do |format|
       if @commute.save
         format.html { render action: "show" }
-        format.json { render json: @commute.attributes.merge({:cal_score => @commute.cal_score,
-                                                              :cash_score => @commute.cash_score,
-                                                              :envfp_score => @commute.envfp_score
-                                                             }), status: :ok, location: @commute }
+        format.json { render json: @commute, status: :ok, location: @commute }
       else
         format.html { render action: "new" }
         format.json { render json: @commute.errors, status: :unprocessable_entity }
@@ -64,10 +61,7 @@ class CommutesController < ApplicationController
     respond_to do |format|
       if @commute.update_attributes(params[:commute])
         format.html { render action: "show" }
-        format.json { render json: @commute.attributes.merge({:cal_score => @commute.cal_score,
-                                                              :cash_score => @commute.cash_score,
-                                                              :envfp_score => @commute.envfp_score
-                                                             }), status: :ok, location: @commute }
+        format.json { render json: @commute, status: :ok, location: @commute }
       else
         format.html { render action: "edit" }
         format.json { render json: @commute.errors, status: :unprocessable_entity }
